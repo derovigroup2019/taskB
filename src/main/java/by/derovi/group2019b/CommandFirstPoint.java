@@ -32,7 +32,7 @@ public class CommandFirstPoint extends Command {
         } catch (Exception ex) {
             throw new CommandArgumentsException(getHeader());
         }
-        boolean way = args[1].equals("0"), alreadyPrinted = false;
+        boolean way = args[1].equals("1"), alreadyPrinted = false;
         System.out.println("\n========= First point " + Integer.toString(way ? 2 : 1) + "  solution =========");
         for(int current = 1; outputCount > 0; ++ current) {
             boolean good = way ? check2(current) : check1(current);

@@ -48,9 +48,14 @@ public class Dialog {
         commands.put("thirdpoint", new CommandThirdPoint());
         commands.put("fifthpoint1", new CommandFifthPoint1());
         commands.put("fifthpoint2", new CommandFifthPoint2());
+        commands.put("modified", new CommandModified());
     }
 
     public Map<String, Command> getCommands() {
         return commands;
+    }
+
+    public Scanner getScanner() {
+        return scanner;
     }
 }
